@@ -15,6 +15,10 @@ a {
     color: #777;
 }
 
+a:hover {
+    color: #3aaaa5;
+}
+
 /* Unordered List Styles */
 ul {
     list-style-type: none;
@@ -44,12 +48,19 @@ header {
 .logo {
     float: left;
     background-color: #4aaaa5;
+    margin: 0 auto;
     margin-top: 0;
     color: white;
     width: 250px;
     padding: 0 40;
     line-height: 80px;
     text-align: center;
+}
+
+nav {
+    float: right;
+    background-color: white;
+    margin: auto 0;
 }
 
 h1 {
@@ -59,25 +70,95 @@ h1 {
 
 .contentContainer {
     background-color: white;
-    height: 546px;
-    margin-top: 30px;
-    margin-left: auto;
+    height: 380px;
     color: #777;
     width: 960px;
     margin: 30px auto;
     padding: 30px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .about {
     color: #4aaaa5;
 }
 
-.bioPhoto {
+#bioPhoto {
     float: left;
     margin: 10px 30px 0 0;
 }
 
-.bioContent {
-    margin-top: 50px;
+#bioText {
+    margin-top: 40px;
     display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #666;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 8px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+#footerText {
+    padding: 10px;
+}
+
+/* Media Queries */
+/* FOR ABOUT PAGE */
+@media screen and (max-width: 768px) {
+    .navContainer {
+        margin: 0px auto;
+        width: 740px;
+    }
+
+    .contentContainer {
+        width: 740px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navContainer {
+        margin: 0px auto;
+        width: 600px;
+    }
+
+    header {
+        position: static;
+
+    }
+
+    .contentContainer {
+        width: 600px;
+        height: 420px;
+    }
+
+    .logo {
+        float: left;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 10px;
+        line-height: 10px;
+        border-bottom-style: solid;
+        border-bottom-color: #ccc;
+        border-bottom-width: 1px;
+
+        /* float: left;
+        background-color: deeppink;
+        margin: auto; */
+    }
 }
