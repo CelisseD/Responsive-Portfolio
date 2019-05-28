@@ -80,6 +80,31 @@ h1 {
     border-width: 1px;
 }
 
+.formContainer {
+    background-color: white;
+    height: 450px;
+    color: #777;
+    width: 960px;
+    margin: 30px auto;
+    padding: 30px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+form {
+    text-align: left;
+    font-size: 18px;
+}
+
+#formButton {
+    font-size: 18px;
+}
+
+#formId {
+    color: #4aaaa5;
+}
+
 .about {
     color: #4aaaa5;
 }
@@ -126,6 +151,10 @@ footer {
         width: 740px;
     }
 
+    .formContainer {
+        width: 740px;
+    }
+
     #bioPhoto {
         margin-bottom: 10px;
     }
@@ -141,6 +170,18 @@ footer {
         width: 600px;
         height: 460px;
         margin-top: 100px;
+    }
+
+    .formContainer {
+        width: 600px;
+        height: 460px;
+        margin-top: 100px;
+    }
+
+/* HELP?????? */
+
+    input [type=text], select, textarea {
+        width: 20px;
     }
 
     #bioPhoto {
